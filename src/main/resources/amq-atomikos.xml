@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:amq="http://activemq.apache.org/schema/core"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://activemq.apache.org/schema/core
+       http://activemq.apache.org/schema/core/activemq-core.xsd">
+	<amq:broker id="my-broker" useJmx="false" persistent="false" brokerName="localhost">
+		<amq:transportConnectors>
+			<amq:transportConnector uri="tcp://localhost:61616" />
+		</amq:transportConnectors>
+	</amq:broker>
+
+	<bean id="consumer.connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+		<constructor-arg ref="amq.connectionFactory" />
+	</bean>
+
+	<bean id="consumer.messageListener" class="com.experts.core.biller.statemachine.api.jms.core.JmsListener" />
+	<bean id="local.transactionManager" class="org.springframework.jms.connection.JmsTransactionManager">
+		<property name="connectionFactory" ref="consumer.connectionFactory" />
+	</bean>
+
+	<bean id="amq.connectionFactory"
+		  class="org.apache.activemq.ActiveMQXAConnectionFactory"
+		  depends-on="my-broker">
+		<property name="brokerURL" value="tcp://localhost:61616?jms.redeliveryPolicy.maximumRedeliveries=1" />
+	</bean>
+
+	<bean id="consumer.jmsContainer"
+		  class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="consumer.connectionFactory" />
+		<property name="destinationName" value="sample.messages" />
+		<property name="messageListener" ref="consumer.messageListener" />
+		<property name="transactionManager" ref="jta.transactionManager" />
+		<property name="sessionTransacted" value="true" />
+	</bean>
+
+	<bean id="xa.connectionFactory" class="com.atomikos.jms.AtomikosConnectionFactoryBean">
+		<property name="uniqueResourceName" value="amq1" />
+		<property name="xaConnectionFactory" ref="amq.connectionFactory" />
+	</bean>
+
+	<bean id="jta.transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
+		<property name="transactionManager">
+			<bean class="com.atomikos.icatch.jta.UserTransactionManager" init-method="init" destroy-method="close">
+				<property name="forceShutdown" value="false" />
+			</bean>
+		</property>
+		<property name="userTransaction">
+			<bean class="com.atomikos.icatch.jta.UserTransactionImp">
+				<property name="transactionTimeout" value="300" />
+			</bean>
+		</property>
+	</bean>
+	<bean id="xa.dataSource" class="com.atomikos.jdbc.nonxa.AtomikosNonXADataSourceBean">
+		<property name="uniqueResourceName" value="hsqldb" />
+		<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+		<property name="url" value="jdbc:hsqldb:mem:biller" />
+		<property name="user" value="sa" />
+		<property name="password" value="" />
+		<property name="poolSize" value="3" />
+	</bean>
+</beans>

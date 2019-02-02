@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sample-api-versioning" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pig" target="1.8" />
+      <module name="pig-auth" target="1.8" />
+      <module name="pig-common" target="1.8" />
+      <module name="pig-config" target="1.8" />
+      <module name="pig-daemon-service" target="1.8" />
+      <module name="pig-eureka" target="1.8" />
+      <module name="pig-gateway" target="1.8" />
+      <module name="pig-mc-service" target="1.8" />
+      <module name="pig-modules" target="1.8" />
+      <module name="pig-monitor" target="1.8" />
+      <module name="pig-sso-client-demo" target="1.8" />
+      <module name="pig-upms-service" target="1.8" />
+      <module name="pig-visual" target="1.8" />
+      <module name="pig-zipkin-db" target="1.8" />
+      <module name="pig-zipkin-elk" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sample-api-versioning" options="-parameters" />
+    </option>
+  </component>
+</project>

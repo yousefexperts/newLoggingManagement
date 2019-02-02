@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/jta-latest
+    username: root
+    password: opc@2018
+  jpa:
+    hibernate.ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        search:
+          default:
+            directory_provider: infinispan
+          infinispan.configuration_resourcename: infinispan.xml
+          analyzer: org.apache.lucene.analysis.ja.JapaneseAnalyzer
+          lucene_version: LUCENE_4_10_4
+    jta:
+      enabled: true
+      atomikos:
+        datasource:
+          jta-user:
+            xa-properties.url: jdbc:oracle:thin:@192.168.10.9:1251/dv10g
+            xa-properties.user: billmain
+            xa-properties.password: billmain
+            xa-data-source-class-name: oracle.jdbc.xa.client.OracleXADataSource
+            unique-resource-name: jta-user
+            max-pool-size: 25
+            min-pool-size: 3
+            max-lifetime: 20000
+            borrow-connection-timeout: 10000
+          jta-income:
+            xa-properties.url: jdbc:mysql://localhost:3306/jta-income
+            xa-properties.user: root
+            xa-properties.password: root
+            xa-data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+            unique-resource-name: jta-income
+            max-pool-size: 25
+            min-pool-size: 3
+            max-lifetime: 20000
+            borrow-connection-timeout: 10000
+
+

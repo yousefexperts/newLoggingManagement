@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://192.168.10.230:3070/ws/notifaction"
+        elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://192.168.10.230:3070/ws/notifaction">
+
+    <element name="NotificationResponse">
+        <complexType>
+            <sequence>
+
+                <element name="Transactions" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="TrxInf-repeatable" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="JOEBPPSTrx" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="STMTDate" type="string" maxOccurs="1" minOccurs="1" />
+
+                <element name="Result" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="idType" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ErrorCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Severity" type="string" maxOccurs="1" minOccurs="1" />
+
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="NotificationRequest">
+        <complexType>
+            <sequence>
+
+
+                <element name="transactions" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="trxInf-repeatable" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="acctInfo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="billNo" type="string" maxOccurs="1" minOccurs="1" />
+
+                <element name="billingNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="billerCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="JOEBPPSTrx" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="BankTrxID" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="billStatus" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="PmtSrc" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BankCode" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="PmtStatus" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="DueAmt" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="PaidAmt" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="FeesAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="FeesOnBiller" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ProcessDate" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="STMTDate" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="AccessChannel" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="PaymentMethod" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ServiceType" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="SubPmts" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="subPmt_repeatable" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="Amount" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="SetBnkCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="PayerInfo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="IdType" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="Id" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Nation" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Name" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Phone" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="Address" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Email" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="JOEBPPSNo" type="string" maxOccurs="1" minOccurs="1" />
+
+            </sequence>
+        </complexType>
+    </element>
+</schema>

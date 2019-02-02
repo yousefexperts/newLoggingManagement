@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../pig/pig-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-config/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-modules/pig-daemon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-modules/pig-mc-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-modules/pig-sso-client-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-modules/pig-upms-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-modules/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-visual/pig-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-visual/pig-zipkin-db/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-visual/pig-zipkin-elk/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pig-visual/pom.xml" />
+        <option value="$PROJECT_DIR$/../pig/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

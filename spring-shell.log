@@ -1,0 +1,7 @@
+// dataflow 1.2.0.RELEASE log opened at 2018-07-09 13:57:02
+dataflow config server http://localhost:9393
+// [failed] stream create --name httptest --definition "http --server.port=3070 | log" --deploy
+// [failed] stream create --name core-engine  --definition "http --server.port=3070 | log" --deploy
+// [failed] stream create --name core-engine  --definition "core-engine --server.port=3070 | log" --deploy
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-07-10 11:09:06

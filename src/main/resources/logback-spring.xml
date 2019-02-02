@@ -1,0 +1,116 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%green(%date) %highlight(%-5level) %yellow([%-4relative]) %magenta([%thread]) %cyan(%logger{10}) %gray([%file:%line]) %blue(%msg%n)</pattern>
+            <!--<pattern>%date %level [%-4relative] [%thread] %logger{10} [%file:%line] %msg%n</pattern>-->
+        </encoder>
+    </appender>
+
+    <appender name="MAIN_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>logs/application-main.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>100MB</maxFileSize>
+            <!-- keep 30 days' worth of history capped at 3GB total size -->
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>3GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date %level [%-4relative] [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="REST_CLIENTS_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>logs/rest-clients-debug.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>100MB</maxFileSize>
+            <!-- keep 30 days' worth of history capped at 3GB total size -->
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>3GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date %level [%-4relative] [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="INCOMING_REQUESTS_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>logs/incoming-requests-debug.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>100MB</maxFileSize>
+            <!-- keep 30 days' worth of history capped at 3GB total size -->
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>3GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date %level [%-4relative] [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="GRAYLOG_TCP" class="com.github.pukkaone.gelf.logback.GelfAppender">
+        <graylogHost>tcp:127.0.0.1</graylogHost>
+        <graylogPort>12201</graylogPort>
+        <originHost>macbook</originHost>
+        <levelIncluded>true</levelIncluded>
+        <locationIncluded>true</locationIncluded>
+        <loggerIncluded>true</loggerIncluded>
+        <markerIncluded>false</markerIncluded>
+        <mdcIncluded>false</mdcIncluded>
+        <threadIncluded>true</threadIncluded>
+        <facility>gelf-java</facility>
+        <additionalField>tcp-test-new=test</additionalField>
+        <additionalField>environment=development</additionalField>
+    </appender>
+
+    <appender name="GRAYLOG_UDP" class="com.github.pukkaone.gelf.logback.GelfAppender">
+        <graylogHost>udp:127.0.0.1</graylogHost>
+        <graylogPort>12202</graylogPort>
+        <originHost>macbook</originHost>
+        <levelIncluded>true</levelIncluded>
+        <locationIncluded>true</locationIncluded>
+        <loggerIncluded>true</loggerIncluded>
+        <markerIncluded>false</markerIncluded>
+        <mdcIncluded>false</mdcIncluded>
+        <threadIncluded>true</threadIncluded>
+        <facility>gelf-java</facility>
+        <additionalField>tcp-test-new=test</additionalField>
+        <additionalField>environment=development</additionalField>
+    </appender>
+
+    <appender name="GRAYLOG_AMQP" class="com.github.pukkaone.gelf.logback.GelfAppender">
+        <amqpURI>amqp://login:pass@127.0.0.1:5672/%2f</amqpURI>
+        <amqpExchange>log-messages</amqpExchange>
+        <amqpRoutingKey>#</amqpRoutingKey>
+        <amqpMaxRetries>5</amqpMaxRetries>
+        <originHost>mac-book</originHost>
+        <facility>gelf-java</facility>
+        <additionalField>amqp-test-new=test</additionalField>
+        <additionalField>environment=development</additionalField>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <logger name="com.example">
+        <appender-ref ref="MAIN_LOG_FILE" />
+        <appender-ref ref="GRAYLOG_TCP" />
+        <!--<appender-ref ref="GRAYLOG_AMQP" />-->
+        <!--<appender-ref ref="GRAYLOG_UDP" />-->
+    </logger>
+
+    <logger name="com.example.interceptor.RestTemplateInterceptor" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="GRAYLOG_TCP" />
+        <appender-ref ref="REST_CLIENTS_LOG_FILE" />
+    </logger>
+
+    <logger name="com.example.interceptor.RestControllerInterceptor" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="GRAYLOG_TCP" />
+        <appender-ref ref="INCOMING_REQUESTS_LOG_FILE" />
+    </logger>
+
+</configuration>

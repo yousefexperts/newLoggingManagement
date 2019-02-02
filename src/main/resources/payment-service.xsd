@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://192.168.10.230:3070/ws/payment"
+        elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://192.168.10.230:3070/ws/payment">
+
+    <element name="PaymentResponse">
+        <complexType>
+            <sequence>
+
+                <element name="Result" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="PmtType" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Severity" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="TrxRefNo" type="string" maxOccurs="1" minOccurs="1" />
+
+                <element name="CustIDNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="idType" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Transactions" type="string" maxOccurs="1" minOccurs="1" />
+
+                <element name="TrxInf-repeatable" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ErrorCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="AcctInfo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BillingNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BillNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BillerCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="InqRefNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ValidationCode" type="string" maxOccurs="1" minOccurs="1" />
+
+                <element name="DueAmt" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="PaidAmt" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ExtraInfo" type="string" maxOccurs="1" minOccurs="1" />
+
+
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="PaymentRequest">
+        <complexType>
+            <sequence>
+
+
+                <element name="TrxRefNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="CustIDCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="OTP" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="CustIDNo" type="string" maxOccurs="1" minOccurs="1" />
+
+                <element name="OTPRefNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Transactions" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="TrxInf-repeatable" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="AcctInfo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BillingNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BillNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="BillerCode" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="PmtType" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="InqRefNo" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ValidationCode" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="DueAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="PaidAmt" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="FeesAmt" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="Currency" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="AccessChannel" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="PaymentMethod" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ServiceTypeDetails" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ServiceType" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="PrepaidCat" type="string" maxOccurs="1" minOccurs="1" />
+
+
+                <element name="StatementNarrative" type="string" maxOccurs="1" minOccurs="1" />
+                <element name="ExtraInfo" type="string" maxOccurs="1" minOccurs="1" />
+
+
+            </sequence>
+        </complexType>
+    </element>
+</schema>

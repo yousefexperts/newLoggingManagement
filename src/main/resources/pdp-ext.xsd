@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://192.168.10.230:3070/ws/billpull"
+		elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.hifreud.com/ws/demo">
+
+	<element name="UserResponse">
+		<complexType>
+			<sequence>
+				<element name="agreementId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="agreementSerial" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="allowAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="areaId" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="baseAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="benSystemNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="branchId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="calcDate" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="classCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="combinCodeCr" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="compId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="constantAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="consumptionAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="consumptionQty" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="consumptionType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="crateAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="crateDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="crateTypeCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="creditAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="creditQty" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="currencyId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="customerType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="cycleSerial" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="debtsAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="debtType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="deductionAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="distAreaCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="distributionDay" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="distributionRoute" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="dstrctCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="dtimeStamp" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="duserId" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="exemptionAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="extraAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="feeAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="feeCode" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="feesVoucherNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="fixedAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="glBaseAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="glCrateAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="glCrateDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="glCrateTypeCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="glPosted" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="glPostedDate" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="glPostedUser" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="glTransNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="immovableType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="isOldDebt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="isPosted" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="isPrinted" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="isUpdated" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="itimeStamp" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="iuserId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="kvrAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="lastDueDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="lastFeeDate" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="lateAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="lateFeesAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="locatCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="locationId" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="lowerLimitAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="maintenanceAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="manVoucherMaster" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="meterFees" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="miscellanyAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="netAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="newLateAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="noOfUnits" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="oldDebtAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="oldDebtPaid" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="oldFeeDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="oldNetAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="oldNotes" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="oldVoucherDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="oldVoucherNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="originalPrintNo" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="ownerSystemNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="paidAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="paidOnLateAmt" type="date" maxOccurs="1" minOccurs="1" />
+				<element name="paidOnLatePrc" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="paymentDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="periodicalAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="prevDiscCheckDone" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="prevDiscountAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="prevDiscountPrevAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="previousAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="previousBaseAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="prevPaidAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="readingDay" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="readingRoute" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="refNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="refType" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="remainAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="remainNotPaid" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="resorcCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="roundAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="routeCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="sbranchId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="servsType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="sewageAmt" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="systemNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="systemVoucherNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="usageType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="utimeStamp" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="uuserId" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="vatAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="vatcatCode" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="vatValue" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="voucherAmt" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="voucherDate" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="voucherDocNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="alid" type="string" maxOccurs="1" minOccurs="1" />
+
+
+				<element name="voucherNo" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="voucherStatus" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="voucherType" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="voucherTypeSeq" type="string" maxOccurs="1" minOccurs="1" />
+
+				<element name="year" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="COMP_ID" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="SERVS_TYPE" type="string" maxOccurs="1" minOccurs="1" />
+				<element name="VOUCHER_NO" type="string" maxOccurs="1" minOccurs="1" />
+
+
+
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="UserRequest">
+		<complexType>
+			<sequence>
+				<element name="userId" type="string" minOccurs="1" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

@@ -1,0 +1,554 @@
+--- maven-dependency-plugin:2.10:tree (default-cli) @ sample-api-versioning ---
+[INFO] pl.piomin.services:sample-api-versioning:jar:0.2.0
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:1.5.13.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-configuration-processor:jar:1.5.13.RELEASE:compile
+[INFO] +- org.infinispan:infinispan-core:jar:9.3.0.Final:provided
+[INFO] |  +- org.infinispan:infinispan-commons:jar:9.3.0.Final:compile
+[INFO] |  +- org.jgroups:jgroups:jar:4.0.12.Final:compile
+[INFO] |  +- com.github.ben-manes.caffeine:caffeine:jar:2.3.5:compile
+[INFO] |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile
+[INFO] |  +- org.jboss.marshalling:jboss-marshalling-osgi:jar:2.0.5.Final:compile
+[INFO] |  \- io.reactivex.rxjava2:rxjava:jar:2.1.3:compile
+[INFO] +- org.infinispan:infinispan-server-hotrod:jar:9.3.0.Final:compile
+[INFO] |  +- org.infinispan:infinispan-tasks:jar:9.3.0.Final:compile
+[INFO] |  |  \- org.infinispan:infinispan-tasks-api:jar:9.3.0.Final:compile
+[INFO] |  +- org.infinispan:infinispan-clustered-counter:jar:9.3.0.Final:compile
+[INFO] |  \- org.infinispan:infinispan-multimap:jar:9.3.0.Final:compile
+[INFO] +- org.infinispan:infinispan-hibernate-cache-v53:jar:9.3.0.Final:compile
+[INFO] |  \- org.infinispan:infinispan-hibernate-cache-commons:jar:9.3.0.Final:compile
+[INFO] +- org.infinispan.server:infinispan-server-jgroups:jar:9.3.0.Final:compile
+[INFO] |  +- org.infinispan:infinispan-commons-test:jar:9.3.0.Final:compile
+[INFO] |  \- org.infinispan.server:infinispan-server-commons:jar:9.3.0.Final:compile
+[INFO] +- org.hibernate:hibernate-validator:jar:5.3.6.Final:compile
+[INFO] |  +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] +- org.infinispan:infinispan-server-memcached:jar:9.3.0.Final:compile
+[INFO] +- com.sun.el:el-ri:jar:1.0:compile
+[INFO] +- org.infinispan:infinispan-spring-boot-starter-embedded:jar:2.0.0.Beta1:compile
+[INFO] |  \- org.infinispan:infinispan-spring4-embedded:jar:9.3.0.Final:compile
+[INFO] |     \- org.infinispan:infinispan-spring4-common:jar:9.3.0.Final:compile
+[INFO] +- org.infinispan.server:infinispan-server-event-logger:jar:9.3.0.Final:compile
+[INFO] |  \- org.infinispan:infinispan-query:jar:9.3.0.Final:compile
+[INFO] |     +- org.infinispan:infinispan-query-dsl:jar:9.3.0.Final:compile
+[INFO] |     +- org.infinispan:infinispan-objectfilter:jar:9.3.0.Final:compile
+[INFO] |     |  \- org.antlr:antlr-runtime:jar:3.5.2:compile
+[INFO] |     +- org.hibernate:hibernate-search-engine:jar:5.10.1.Final:compile
+[INFO] |     |  \- org.apache.lucene:lucene-facet:jar:5.5.5:compile
+[INFO] |     +- org.infinispan:infinispan-directory-provider:jar:9.3.0.Final:compile
+[INFO] |     +- org.hibernate:hibernate-search-serialization-avro:jar:5.10.1.Final:compile
+[INFO] |     \- org.infinispan:infinispan-lucene-directory:jar:9.3.0.Final:compile
+[INFO] +- org.infinispan.server:infinispan-server:pom:9.3.0.Final:compile
+[INFO] +- org.infinispan:infinispan-server-core:jar:9.3.0.Final:compile
+[INFO] |  +- io.netty:netty-handler:jar:4.1.22.Final:compile
+[INFO] |  |  \- io.netty:netty-codec:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-transport-native-epoll:jar:4.1.22.Final:compile
+[INFO] |  |  \- io.netty:netty-transport-native-unix-common:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.22.Final:compile
+[INFO] |  \- com.thoughtworks.xstream:xstream:jar:1.4.10:compile
+[INFO] |     +- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |     \- xpp3:xpp3_min:jar:1.1.4c:compile
+[INFO] +- org.infinispan:infinispan-hibernate-cache-spi:jar:9.3.0.Final:compile
+[INFO] +- org.infinispan:infinispan-spring-boot-starter:jar:2.0.0.Beta1:compile
+[INFO] |  \- org.infinispan:infinispan-spring-boot-starter-remote:jar:2.0.0.Beta1:compile
+[INFO] |     +- org.infinispan:infinispan-client-hotrod:jar:9.3.0.Final:compile
+[INFO] |     \- org.infinispan:infinispan-spring4-remote:jar:9.3.0.Final:compile
+[INFO] +- org.apache.lucene:lucene-analyzers-kuromoji:jar:4.10.4:compile
+[INFO] |  +- org.apache.lucene:lucene-analyzers-common:jar:5.5.5:compile
+[INFO] |  \- org.apache.lucene:lucene-core:jar:5.5.5:compile
+[INFO] +- io.springfox:springfox-swagger-ui:jar:2.9.0:compile
+[INFO] +- io.springfox:springfox-swagger2:jar:2.9.0:compile
+[INFO] |  +- io.swagger:swagger-annotations:jar:1.5.18:compile
+[INFO] |  +- io.swagger:swagger-models:jar:1.5.18:compile
+[INFO] |  +- io.springfox:springfox-schema:jar:2.9.0:compile
+[INFO] |  +- io.springfox:springfox-swagger-common:jar:2.9.0:compile
+[INFO] |  +- org.springframework.plugin:spring-plugin-core:jar:1.2.0.RELEASE:compile
+[INFO] |  +- org.springframework.plugin:spring-plugin-metadata:jar:1.2.0.RELEASE:compile
+[INFO] |  \- org.mapstruct:mapstruct:jar:1.2.0.Final:compile
+[INFO] +- io.springfox:springfox-spring-web:jar:2.9.2:compile
+[INFO] +- com.google.guava:guava:jar:22.0:compile
+[INFO] |  +- com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO] |  +- com.google.errorprone:error_prone_annotations:jar:2.0.18:compile
+[INFO] |  +- com.google.j2objc:j2objc-annotations:jar:1.1:compile
+[INFO] |  \- org.codehaus.mojo:animal-sniffer-annotations:jar:1.14:compile
+[INFO] +- io.vertx:vertx-core:jar:3.5.1:compile
+[INFO] |  +- io.netty:netty-common:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-buffer:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-transport:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-handler-proxy:jar:4.1.22.Final:compile
+[INFO] |  |  \- io.netty:netty-codec-socks:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-codec-http:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-codec-http2:jar:4.1.22.Final:compile
+[INFO] |  +- io.netty:netty-resolver:jar:4.1.22.Final:compile
+[INFO] |  \- io.netty:netty-resolver-dns:jar:4.1.22.Final:compile
+[INFO] |     \- io.netty:netty-codec-dns:jar:4.1.22.Final:compile
+[INFO] +- io.vertx:vertx-web:jar:3.5.1:compile
+[INFO] |  +- io.vertx:vertx-auth-common:jar:3.5.1:compile
+[INFO] |  \- io.vertx:vertx-bridge-common:jar:3.5.1:compile
+[INFO] +- io.vertx:vertx-web-client:jar:3.5.1:compile
+[INFO] |  \- io.vertx:vertx-web-common:jar:3.5.1:compile
+[INFO] +- io.vertx:vertx-mongo-client:jar:3.5.1:compile
+[INFO] |  \- org.mongodb:mongodb-driver-async:jar:3.6.1:compile
+[INFO] |     +- org.mongodb:bson:jar:3.6.1:compile
+[INFO] |     \- org.mongodb:mongodb-driver-core:jar:3.6.1:compile
+[INFO] +- io.vertx:vertx-service-proxy:jar:3.5.1:compile
+[INFO] +- io.vertx:vertx-codegen:jar:3.5.1:compile
+[INFO] |  \- org.mvel:mvel2:jar:2.3.1.Final:compile
+[INFO] +- io.vertx:vertx-service-discovery:jar:3.5.1:compile
+[INFO] +- io.vertx:vertx-rx-java2:jar:3.5.1:compile
+[INFO] |  \- org.reactivestreams:reactive-streams:jar:1.0.1:compile
+[INFO] +- io.vertx:vertx-config:jar:3.5.1:compile
+[INFO] +- org.springframework.ws:spring-ws-core:jar:3.0.1.RELEASE:compile
+[INFO] |  +- org.springframework.ws:spring-xml:jar:3.0.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.3.17.RELEASE:compile
+[INFO] |  +- org.springframework:spring-beans:jar:4.3.17.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:4.3.17.RELEASE:compile
+[INFO] |  +- commons-io:commons-io:jar:2.5:compile
+[INFO] |  \- org.springframework:spring-core:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework.ws:spring-ws-support:jar:3.0.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-jms:jar:4.3.17.RELEASE:compile
+[INFO] |  \- com.sun.mail:javax.mail:jar:1.5.6:compile
+[INFO] +- io.debezium:debezium-core:jar:0.7.5:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.41:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter:jar:1.5.13.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot:jar:1.5.13.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-logging:jar:1.5.13.RELEASE:compile
+[INFO] |  \- org.yaml:snakeyaml:jar:1.17:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.13.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-aop:jar:1.5.13.RELEASE:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.8.13:compile
+[INFO] |  +- javax.transaction:javax.transaction-api:jar:1.2:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:1.11.12.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-orm:jar:4.3.17.RELEASE:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-rest:jar:1.5.13.RELEASE:compile
+[INFO] |  \- org.springframework.data:spring-data-rest-webmvc:jar:2.6.12.RELEASE:compile
+[INFO] |     \- org.springframework.data:spring-data-rest-core:jar:2.6.12.RELEASE:compile
+[INFO] |        +- org.springframework.hateoas:spring-hateoas:jar:0.23.0.RELEASE:compile
+[INFO] |        \- org.atteo:evo-inflector:jar:1.2.2:compile
+[INFO] +- org.springframework.statemachine:spring-statemachine-core:jar:2.0.1.RELEASE:compile
+[INFO] |  +- org.springframework:spring-tx:jar:4.3.17.RELEASE:compile
+[INFO] |  \- org.springframework:spring-messaging:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework.statemachine:spring-statemachine-recipes-common:jar:2.0.1.RELEASE:compile
+[INFO] |  \- org.springframework:spring-context:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework.statemachine:spring-statemachine-kryo:jar:2.0.1.RELEASE:compile
+[INFO] |  \- com.esotericsoftware:kryo-shaded:jar:3.0.3:compile
+[INFO] |     \- com.esotericsoftware:minlog:jar:1.3.0:compile
+[INFO] +- com.h2database:h2:jar:1.4.195:runtime
+[INFO] +- de.codecentric:spring-boot-admin-starter-client:jar:1.5.6:compile
+[INFO] +- org.hibernate:hibernate-core:jar:5.3.2.Final:provided
+[INFO] |  +- javax.persistence:javax.persistence-api:jar:2.2:provided
+[INFO] |  +- org.javassist:javassist:jar:3.21.0-GA:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.8.12:compile
+[INFO] |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final:provided
+[INFO] |  +- org.jboss:jandex:jar:2.0.5.Final:provided
+[INFO] |  +- javax.activation:javax.activation-api:jar:1.2.0:provided
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final:compile
+[INFO] +- org.hibernate:hibernate-envers:jar:5.2.8.Final:compile
+[INFO] +- org.hibernate:hibernate-ehcache:jar:5.3.2.Final:compile
+[INFO] |  \- net.sf.ehcache:ehcache:jar:2.10.4:compile
+[INFO] +- org.springframework.cloud:spring-cloud-netflix-hystrix-stream:jar:1.4.0.RELEASE:compile
+[INFO] |  +- org.springframework.cloud:spring-cloud-commons:jar:1.3.0.RELEASE:compile
+[INFO] |  \- org.springframework.cloud:spring-cloud-stream:jar:1.3.0.RELEASE:compile
+[INFO] |     +- org.springframework.boot:spring-boot-starter-validation:jar:1.5.13.RELEASE:compile
+[INFO] |     |  \- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.31:compile
+[INFO] |     +- org.springframework.integration:spring-integration-jmx:jar:4.3.16.RELEASE:compile
+[INFO] |     +- org.springframework:spring-tuple:jar:1.0.0.RELEASE:compile
+[INFO] |     \- org.springframework.integration:spring-integration-tuple:jar:1.0.0.RELEASE:compile
+[INFO] +- org.springframework.cloud:spring-cloud-starter-stream-rabbit:jar:1.3.0.RELEASE:compile
+[INFO] |  \- org.springframework.cloud:spring-cloud-stream-binder-rabbit:jar:1.3.0.RELEASE:compile
+[INFO] |     +- org.springframework.cloud:spring-cloud-stream-binder-rabbit-core:jar:1.3.0.RELEASE:compile
+[INFO] |     +- org.springframework.cloud:spring-cloud-stream-codec:jar:1.3.0.RELEASE:compile
+[INFO] |     +- org.springframework.boot:spring-boot-starter-amqp:jar:1.5.13.RELEASE:compile
+[INFO] |     |  \- org.springframework.amqp:spring-rabbit:jar:1.7.7.RELEASE:compile
+[INFO] |     |     +- com.rabbitmq:http-client:jar:1.1.1.RELEASE:compile
+[INFO] |     |     +- com.rabbitmq:amqp-client:jar:4.0.3:compile
+[INFO] |     |     \- org.springframework.amqp:spring-amqp:jar:1.7.7.RELEASE:compile
+[INFO] |     \- org.springframework.integration:spring-integration-amqp:jar:4.3.16.RELEASE:compile
+[INFO] +- org.apache.commons:commons-pool2:jar:2.5.0:compile
+[INFO] +- org.springframework.restdocs:spring-restdocs-restassured:jar:1.1.3.RELEASE:test
+[INFO] |  +- org.springframework.restdocs:spring-restdocs-core:jar:1.1.3.RELEASE:test
+[INFO] |  \- com.jayway.restassured:rest-assured:jar:2.8.0:test
+[INFO] |     +- org.codehaus.groovy:groovy:jar:2.4.15:test
+[INFO] |     +- org.codehaus.groovy:groovy-xml:jar:2.4.15:test
+[INFO] |     +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:test
+[INFO] |     +- com.jayway.restassured:json-path:jar:2.8.0:test
+[INFO] |     |  +- org.codehaus.groovy:groovy-json:jar:2.4.15:test
+[INFO] |     |  \- com.jayway.restassured:rest-assured-common:jar:2.8.0:test
+[INFO] |     \- com.jayway.restassured:xml-path:jar:2.8.0:test
+[INFO] +- org.springframework.restdocs:spring-restdocs-mockmvc:jar:1.1.3.RELEASE:test
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:1.5.13.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:1.5.13.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:1.5.13.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.2.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.2.1:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.1:test
+[INFO] |  +- org.assertj:assertj-core:jar:2.6.0:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.4.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  \- org.springframework:spring-test:jar:4.3.17.RELEASE:test
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] +- org.springframework.statemachine:spring-statemachine-test:jar:1.2.1.RELEASE:test
+[INFO] +- org.apache.commons:commons-dbcp2:jar:2.2.0:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.2:runtime
+[INFO] +- org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.13.RELEASE:compile
+[INFO] |  +- org.apache.tomcat:tomcat-jdbc:jar:8.5.31:compile
+[INFO] |  |  \- org.apache.tomcat:tomcat-juli:jar:8.5.31:compile
+[INFO] |  \- org.springframework:spring-jdbc:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework.session:spring-session:jar:1.3.3.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:1.5.13.RELEASE:compile
+[INFO] |  \- org.springframework.boot:spring-boot-actuator:jar:1.5.13.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-cache:jar:1.5.13.RELEASE:compile
+[INFO] |  \- org.springframework:spring-context-support:jar:4.3.17.RELEASE:compile
+[INFO] +- com.hazelcast:hazelcast-hibernate:jar:2.6.10:provided
+[INFO] +- com.hazelcast:hazelcast-all:jar:3.9.2:compile
+[INFO] +- de.codecentric:spring-boot-admin-server-ui-activiti:jar:1.5.7:compile
+[INFO] +- de.codecentric:spring-boot-admin-server-ui:jar:1.5.6:compile
+[INFO] +- de.codecentric:spring-boot-admin-server:jar:1.5.6:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:1.5.13.RELEASE:compile
+[INFO] +- wsdl4j:wsdl4j:jar:1.6.3:compile
+[INFO] +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final:compile
+[INFO] +- javassist:javassist:jar:3.12.1.GA:compile
+[INFO] +- org.apache.commons:commons-lang3:jar:3.7:compile
+[INFO] +- com.deliveredtechnologies:rulebook-core:jar:0.10:compile
+[INFO] |  \- org.reflections:reflections:jar:0.9.10:compile
+[INFO] |     \- com.google.code.findbugs:annotations:jar:2.0.1:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-solr:jar:1.5.13.RELEASE:compile
+[INFO] |  \- org.apache.httpcomponents:httpmime:jar:4.5.5:compile
+[INFO] +- org.apache.solr:solr-solrj:jar:5.5.5:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.9:compile
+[INFO] |  +- org.apache.zookeeper:zookeeper:jar:3.4.6:compile
+[INFO] |  +- org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[INFO] |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.4.1:compile
+[INFO] |  \- org.noggit:noggit:jar:0.6:compile
+[INFO] +- org.apache.solr:solr-core:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-analyzers-phonetic:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-backward-codecs:jar:5.5.5:compile
+[INFO] |  +- org.apache.lucene:lucene-classification:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-codecs:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-expressions:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-grouping:jar:5.5.5:compile
+[INFO] |  +- org.apache.lucene:lucene-highlighter:jar:5.5.5:compile
+[INFO] |  +- org.apache.lucene:lucene-join:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-memory:jar:5.5.5:compile
+[INFO] |  +- org.apache.lucene:lucene-misc:jar:5.5.5:compile
+[INFO] |  +- org.apache.lucene:lucene-queries:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-queryparser:jar:5.5.5:compile
+[INFO] |  +- org.apache.lucene:lucene-sandbox:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-spatial-extras:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-spatial3d:jar:7.3.1:compile
+[INFO] |  +- org.apache.lucene:lucene-suggest:jar:7.3.1:compile
+[INFO] |  +- com.carrotsearch:hppc:jar:0.7.3:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.8.11:compile
+[INFO] |  +- com.tdunning:t-digest:jar:3.1:compile
+[INFO] |  +- commons-cli:commons-cli:jar:1.2:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.10:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] |  +- commons-configuration:commons-configuration:jar:1.8:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.3.3:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- info.ganglia.gmetric4j:gmetric4j:jar:1.0.7:compile
+[INFO] |  +- io.dropwizard.metrics:metrics-core:jar:3.1.5:compile
+[INFO] |  +- io.dropwizard.metrics:metrics-ganglia:jar:3.1.5:compile
+[INFO] |  +- io.dropwizard.metrics:metrics-graphite:jar:3.1.5:compile
+[INFO] |  +- io.dropwizard.metrics:metrics-jetty9:jar:3.1.5:compile
+[INFO] |  +- io.dropwizard.metrics:metrics-jvm:jar:3.1.5:compile
+[INFO] |  +- joda-time:joda-time:jar:2.9.9:compile
+[INFO] |  +- net.hydromatic:eigenbase-properties:jar:1.1.5:compile
+[INFO] |  +- org.antlr:antlr4-runtime:jar:4.5.1-1:compile
+[INFO] |  +- org.apache.calcite:calcite-core:jar:1.13.0:compile
+[INFO] |  +- org.apache.calcite:calcite-linq4j:jar:1.13.0:compile
+[INFO] |  +- org.apache.calcite.avatica:avatica-core:jar:1.10.0:compile
+[INFO] |  +- org.apache.commons:commons-exec:jar:1.3:compile
+[INFO] |  +- org.apache.curator:curator-client:jar:2.8.0:compile
+[INFO] |  +- org.apache.curator:curator-framework:jar:2.11.1:compile
+[INFO] |  +- org.apache.curator:curator-recipes:jar:2.11.1:compile
+[INFO] |  +- org.apache.hadoop:hadoop-annotations:jar:2.7.4:compile
+[INFO] |  |  \- jdk.tools:jdk.tools:jar:1.8:system
+[INFO] |  +- org.apache.hadoop:hadoop-auth:jar:2.7.4:compile
+[INFO] |  +- org.apache.hadoop:hadoop-common:jar:2.7.4:compile
+[INFO] |  +- org.apache.hadoop:hadoop-hdfs:jar:2.7.4:compile
+[INFO] |  +- org.apache.htrace:htrace-core:jar:3.2.0-incubating:compile
+[INFO] |  +- org.codehaus.janino:commons-compiler:jar:2.7.6:compile
+[INFO] |  +- org.codehaus.janino:janino:jar:2.7.8:compile
+[INFO] |  +- org.locationtech.spatial4j:spatial4j:jar:0.7:compile
+[INFO] |  +- org.ow2.asm:asm:jar:5.1:compile
+[INFO] |  \- org.ow2.asm:asm-commons:jar:5.1:compile
+[INFO] +- org.springframework.cloud:spring-cloud-consul-binder:jar:1.2.2.RELEASE:compile
+[INFO] +- com.ecwid.consul:consul-api:jar:1.4.0:compile
+[INFO] +- com.orbitz.consul:consul-client:jar:1.2.1:compile
+[INFO] |  +- com.squareup.retrofit2:retrofit:jar:2.3.0:compile
+[INFO] |  +- com.squareup.retrofit2:converter-jackson:jar:2.3.0:compile
+[INFO] |  +- com.squareup.okhttp3:okhttp:jar:3.8.1:compile
+[INFO] |  |  \- com.squareup.okio:okio:jar:1.13.0:compile
+[INFO] |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.8.11:compile
+[INFO] |  \- com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.8.11:compile
+[INFO] +- org.springframework.cloud:spring-cloud-consul-core:jar:1.2.2.RELEASE:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.3.0-alpha4:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.1.11:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.8.0-beta2:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.8.0-beta2:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:slf4j-simple:jar:1.7.12:compile
+[INFO] +- org.springframework.data:spring-data-solr:jar:2.1.12.RELEASE:compile
+[INFO] |  \- org.slf4j:jcl-over-slf4j:jar:1.7.25:runtime
+[INFO] +- org.springframework.data:spring-data-commons:jar:1.13.12.RELEASE:compile
+[INFO] +- com.mysema.querydsl:querydsl-core:jar:3.7.4:compile
+[INFO] |  +- com.mysema.commons:mysema-commons-lang:jar:0.2.4:compile
+[INFO] |  \- com.infradna.tool:bridge-method-annotation:jar:1.13:compile
+[INFO] +- com.mysema.querydsl:querydsl-jpa:jar:3.7.4:compile
+[INFO] +- com.mysema.querydsl:querydsl-sql:jar:3.7.4:compile
+[INFO] |  \- org.apache.servicemix.bundles:org.apache.servicemix.bundles.javax-inject:jar:1_2:compile
+[INFO] +- org.springframework.data:spring-data-jdbc-core:jar:1.2.1.RELEASE:compile
+[INFO] +- com.querydsl:querydsl-sql-codegen:jar:4.2.1:compile
+[INFO] |  +- com.querydsl:querydsl-codegen:jar:4.2.1:compile
+[INFO] |  |  +- com.querydsl:querydsl-core:jar:4.2.1:compile
+[INFO] |  |  +- com.mysema.codegen:codegen:jar:0.6.8:compile
+[INFO] |  |  |  \- org.eclipse.jdt.core.compiler:ecj:jar:4.3.1:compile
+[INFO] |  |  \- javax.inject:javax.inject:jar:1:compile
+[INFO] |  +- com.querydsl:querydsl-sql:jar:4.2.1:compile
+[INFO] |  \- com.querydsl:querydsl-sql-spatial:jar:4.2.1:compile
+[INFO] |     +- com.querydsl:querydsl-spatial:jar:4.2.1:compile
+[INFO] |     |  \- org.geolatte:geolatte-geom:jar:0.13:compile
+[INFO] |     \- com.vividsolutions:jts:jar:1.13:compile
+[INFO] +- com.mchange:c3p0:jar:0.9.5.1:compile
+[INFO] |  \- com.mchange:mchange-commons-java:jar:0.2.10:compile
+[INFO] +- javax.servlet:javax.servlet-api:jar:4.0.1:provided
+[INFO] +- org.springframework.cloud:spring-cloud-sleuth-zipkin:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.springframework.cloud:spring-cloud-sleuth-core:jar:1.3.0.RELEASE:compile
+[INFO] |  |  \- org.aspectj:aspectjrt:jar:1.8.13:compile
+[INFO] |  +- io.zipkin.zipkin2:zipkin:jar:2.3.1:compile
+[INFO] |  +- io.zipkin.reporter2:zipkin-reporter:jar:2.1.4:compile
+[INFO] |  +- io.zipkin.reporter2:zipkin-sender-kafka11:jar:2.1.4:compile
+[INFO] |  \- io.zipkin.reporter2:zipkin-sender-amqp-client:jar:2.1.4:compile
+[INFO] +- org.springframework.cloud:spring-cloud-config-server:jar:1.4.0.RELEASE:compile
+[INFO] |  +- org.springframework.cloud:spring-cloud-config-client:jar:1.4.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-crypto:jar:4.2.6.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-rsa:jar:1.0.3.RELEASE:compile
+[INFO] |  \- org.eclipse.jgit:org.eclipse.jgit:jar:3.6.1.201501031845-r:compile
+[INFO] |     +- com.jcraft:jsch:jar:0.1.54:compile
+[INFO] |     \- com.googlecode.javaewah:JavaEWAH:jar:0.7.9:compile
+[INFO] +- org.eclipse.jetty:jetty-webapp:jar:9.4.8.v20171121:compile
+[INFO] +- org.apache.flink:flink-metrics-dropwizard:jar:1.2.0:compile
+[INFO] |  \- org.apache.flink:force-shading:jar:1.2.0:compile
+[INFO] +- org.apache.flink:flink-metrics-jmx:jar:1.2.0:compile
+[INFO] +- com.google.protobuf:protobuf-java:jar:3.0.0:compile
+[INFO] +- org.apache.flink:flink-connector-kafka-0.10_2.10:jar:1.2.0:compile
+[INFO] |  +- org.apache.flink:flink-connector-kafka-0.9_2.10:jar:1.2.0:compile
+[INFO] |  |  \- org.apache.flink:flink-connector-kafka-base_2.10:jar:1.2.0:compile
+[INFO] |  \- org.apache.kafka:kafka-clients:jar:0.10.0.1:compile
+[INFO] |     +- net.jpountz.lz4:lz4:jar:1.3.0:compile
+[INFO] |     \- org.xerial.snappy:snappy-java:jar:1.1.2.6:compile
+[INFO] +- org.apache.flink:flink-java:jar:1.2.0:compile
+[INFO] |  +- org.apache.flink:flink-core:jar:1.2.0:compile
+[INFO] |  |  +- org.apache.flink:flink-annotations:jar:1.2.0:compile
+[INFO] |  |  +- org.apache.flink:flink-metrics-core:jar:1.2.0:compile
+[INFO] |  |  +- com.esotericsoftware.kryo:kryo:jar:2.24.0:compile
+[INFO] |  |  |  \- com.esotericsoftware.minlog:minlog:jar:1.2:compile
+[INFO] |  |  +- org.apache.commons:commons-compress:jar:1.4:compile
+[INFO] |  |  \- org.apache.avro:avro:jar:1.7.7:compile
+[INFO] |  +- org.apache.flink:flink-shaded-hadoop2:jar:1.2.0:compile
+[INFO] |  |  +- org.tukaani:xz:jar:1.0:compile
+[INFO] |  |  +- xmlenc:xmlenc:jar:0.52:compile
+[INFO] |  |  +- commons-net:commons-net:jar:3.1:compile
+[INFO] |  |  +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] |  |  +- org.mortbay.jetty:jetty-util:jar:6.1.26:compile
+[INFO] |  |  +- com.sun.jersey:jersey-core:jar:1.19.1:compile
+[INFO] |  |  +- commons-el:commons-el:jar:1.0:runtime
+[INFO] |  |  +- com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
+[INFO] |  |  +- commons-digester:commons-digester:jar:2.1:compile
+[INFO] |  |  +- com.thoughtworks.paranamer:paranamer:jar:2.3:compile
+[INFO] |  |  +- commons-beanutils:commons-beanutils-bean-collections:jar:1.8.3:compile
+[INFO] |  |  +- commons-daemon:commons-daemon:jar:1.0.13:compile
+[INFO] |  |  \- javax.xml.stream:stax-api:jar:1.0-2:compile
+[INFO] |  \- org.apache.commons:commons-math3:jar:3.5:compile
+[INFO] +- org.apache.flink:flink-jdbc:jar:1.2.0:compile
+[INFO] +- org.apache.flink:flink-streaming-java_2.10:jar:1.2.0:compile
+[INFO] |  +- org.apache.flink:flink-runtime_2.10:jar:1.2.0:compile
+[INFO] |  |  +- io.netty:netty-all:jar:4.1.22.Final:compile
+[INFO] |  |  +- org.scala-lang:scala-library:jar:2.10.4:compile
+[INFO] |  |  +- com.data-artisans:flakka-actor_2.10:jar:2.3-custom:compile
+[INFO] |  |  |  \- com.typesafe:config:jar:1.2.1:compile
+[INFO] |  |  +- com.data-artisans:flakka-remote_2.10:jar:2.3-custom:compile
+[INFO] |  |  |  \- org.uncommons.maths:uncommons-maths:jar:1.2.2a:compile
+[INFO] |  |  +- com.data-artisans:flakka-slf4j_2.10:jar:2.3-custom:compile
+[INFO] |  |  +- org.clapper:grizzled-slf4j_2.10:jar:1.0.2:compile
+[INFO] |  |  +- com.github.scopt:scopt_2.10:jar:3.2.0:compile
+[INFO] |  |  \- com.twitter:chill_2.10:jar:0.7.4:compile
+[INFO] |  |     \- com.twitter:chill-java:jar:0.7.4:compile
+[INFO] |  \- org.apache.sling:org.apache.sling.commons.json:jar:2.0.6:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-security:jar:1.5.13.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-config:jar:4.2.6.RELEASE:compile
+[INFO] |  \- org.springframework.security:spring-security-web:jar:4.2.6.RELEASE:compile
+[INFO] +- org.apache.flink:flink-clients_2.10:jar:1.2.0:compile
+[INFO] |  \- org.apache.flink:flink-optimizer_2.10:jar:1.2.0:compile
+[INFO] +- org.eclipse.jetty:jetty-servlet:jar:9.4.8.v20171121:compile
+[INFO] +- org.eclipse.jetty:jetty-server:jar:9.4.8.v20171121:compile
+[INFO] +- org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:compile
+[INFO] +- org.eclipse.jetty:jetty-security:jar:9.4.8.v20171121:provided
+[INFO] +- org.springframework.boot:spring-boot-starter-ws:jar:1.4.7.RELEASE:compile
+[INFO] +- org.apache.httpcomponents:httpclient:jar:4.5.5:compile
+[INFO] +- org.eclipse.jetty:jetty-http:jar:9.4.8.v20171121:provided
+[INFO] +- org.eclipse.jetty:jetty-io:jar:9.4.8.v20171121:provided
+[INFO] +- org.eclipse.jetty:jetty-client:jar:9.4.8.v20171121:provided
+[INFO] +- com.google.code.gson:gson:jar:2.8.4:test
+[INFO] +- org.sitemesh:sitemesh:jar:3.0.1:compile
+[INFO] +- org.springframework.security:spring-security-jwt:jar:1.0.9.RELEASE:compile
+[INFO] |  \- org.bouncycastle:bcpkix-jdk15on:jar:1.56:compile
+[INFO] |     \- org.bouncycastle:bcprov-jdk15on:jar:1.56:compile
+[INFO] +- org.easymock:easymock:jar:3.6:test
+[INFO] |  \- org.objenesis:objenesis:jar:2.6:compile
+[INFO] +- org.springframework.ws:spring-ws-test:jar:3.0.1.RELEASE:test
+[INFO] +- xmlunit:xmlunit:jar:1.6:test
+[INFO] +- org.springframework.integration:spring-integration-xml:jar:5.0.6.RELEASE:compile
+[INFO] |  \- org.springframework.integration:spring-integration-core:jar:4.3.16.RELEASE:compile
+[INFO] +- org.springframework.integration:spring-integration-ws:jar:5.0.6.RELEASE:compile
+[INFO] +- com.sun.xml.messaging.saaj:saaj-impl:jar:1.3.23:runtime
+[INFO] |  +- javax.xml.soap:javax.xml.soap-api:jar:1.3.5:runtime
+[INFO] |  +- org.jvnet.mimepull:mimepull:jar:1.9:compile
+[INFO] |  \- org.jvnet.staxex:stax-ex:jar:1.7.4:runtime
+[INFO] +- javax.activation:activation:jar:1.1.1:runtime
+[INFO] +- org.springframework.security.oauth:spring-security-oauth2:jar:2.3.3.RELEASE:compile
+[INFO] |  \- org.springframework.security:spring-security-core:jar:4.2.6.RELEASE:compile
+[INFO] +- org.jolokia:jolokia-core:jar:1.3.7:compile
+[INFO] +- com.netflix.hystrix:hystrix-core:jar:1.5.12:compile
+[INFO] |  +- com.netflix.archaius:archaius-core:jar:0.7.4:compile
+[INFO] |  +- io.reactivex:rxjava:jar:1.2.0:compile
+[INFO] |  \- org.hdrhistogram:HdrHistogram:jar:2.1.9:compile
+[INFO] +- org.springframework.cloud:spring-cloud-starter-zuul:jar:1.4.0.RELEASE:compile
+[INFO] |  \- org.springframework.cloud:spring-cloud-starter-netflix-zuul:jar:1.4.0.RELEASE:compile
+[INFO] |     \- org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:1.4.0.RELEASE:compile
+[INFO] |        \- com.netflix.ribbon:ribbon:jar:2.2.4:compile
+[INFO] |           +- com.netflix.ribbon:ribbon-transport:jar:2.2.4:runtime
+[INFO] |           |  +- io.reactivex:rxnetty-contexts:jar:0.4.9:runtime
+[INFO] |           |  \- io.reactivex:rxnetty-servo:jar:0.4.9:runtime
+[INFO] |           \- io.reactivex:rxnetty:jar:0.4.9:runtime
+[INFO] +- org.springframework.cloud:spring-cloud-netflix-core:jar:1.4.0.RELEASE:compile
+[INFO] +- com.netflix.zuul:zuul-core:jar:1.3.1:compile
+[INFO] |  +- com.netflix.servo:servo-core:jar:0.10.1:compile
+[INFO] |  |  \- com.netflix.servo:servo-internal:jar:0.10.1:runtime
+[INFO] |  \- com.netflix.netflix-commons:netflix-commons-util:jar:0.1.1:runtime
+[INFO] +- com.netflix.zuul:zuul-netflix:jar:1.3.1:compile
+[INFO] |  +- org.json:json:jar:20140107:runtime
+[INFO] |  +- com.netflix.astyanax:astyanax-cassandra:jar:1.56.48:runtime
+[INFO] |  |  +- com.eaio.uuid:uuid:jar:3.2:runtime
+[INFO] |  |  +- io.netty:netty:jar:3.6.6.Final:compile
+[INFO] |  |  +- com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:jar:1.3:runtime
+[INFO] |  |  +- com.netflix.astyanax:astyanax-core:jar:1.56.48:runtime
+[INFO] |  |  +- com.github.stephenc.high-scale-lib:high-scale-lib:jar:1.1.2:runtime
+[INFO] |  |  +- org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-csv:jar:1.0-r706900_3:runtime
+[INFO] |  |  \- org.codehaus.jettison:jettison:jar:1.2:runtime
+[INFO] |  |     \- stax:stax-api:jar:1.0.1:runtime
+[INFO] |  +- com.netflix.astyanax:astyanax-thrift:jar:1.56.48:runtime
+[INFO] |  |  \- org.apache.thrift:libthrift:jar:0.7.0:runtime
+[INFO] |  +- com.netflix.ribbon:ribbon-core:jar:2.2.4:compile
+[INFO] |  +- com.netflix.ribbon:ribbon-eureka:jar:2.2.4:compile
+[INFO] |  |  +- com.netflix.ribbon:ribbon-loadbalancer:jar:2.2.4:compile
+[INFO] |  |  |  \- com.netflix.netflix-commons:netflix-statistics:jar:0.1.1:runtime
+[INFO] |  |  \- com.netflix.eureka:eureka-client:jar:1.7.0:compile
+[INFO] |  |     +- com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0:runtime
+[INFO] |  |     |  +- com.netflix.netflix-commons:netflix-infix:jar:0.3.0:runtime
+[INFO] |  |     |  |  \- commons-jxpath:commons-jxpath:jar:1.3:runtime
+[INFO] |  |     |  \- org.apache.commons:commons-math:jar:2.2:runtime
+[INFO] |  |     \- com.google.inject:guice:jar:4.1.0:runtime
+[INFO] |  \- com.netflix.ribbon:ribbon-httpclient:jar:2.2.4:compile
+[INFO] |     +- com.sun.jersey:jersey-client:jar:1.19.1:runtime
+[INFO] |     \- com.sun.jersey.contribs:jersey-apache-client4:jar:1.19.1:runtime
+[INFO] +- org.springframework.cloud:spring-cloud-context:jar:1.3.0.RELEASE:compile
+[INFO] +- org.springframework.cloud:spring-cloud-starter-netflix-hystrix:jar:1.4.0.RELEASE:compile
+[INFO] |  +- org.springframework.cloud:spring-cloud-starter:jar:1.3.0.RELEASE:compile
+[INFO] |  +- org.springframework.cloud:spring-cloud-starter-netflix-archaius:jar:1.4.0.RELEASE:compile
+[INFO] |  +- com.netflix.hystrix:hystrix-metrics-event-stream:jar:1.5.12:compile
+[INFO] |  |  \- com.netflix.hystrix:hystrix-serialization:jar:1.5.12:runtime
+[INFO] |  |     \- com.fasterxml.jackson.module:jackson-module-afterburner:jar:2.8.11:runtime
+[INFO] |  \- com.netflix.hystrix:hystrix-javanica:jar:1.5.12:compile
+[INFO] +- org.springframework.cloud:spring-cloud-starter-turbine:jar:1.4.0.RELEASE:compile
+[INFO] |  \- org.springframework.cloud:spring-cloud-starter-netflix-turbine:jar:1.4.0.RELEASE:compile
+[INFO] |     +- org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:1.4.0.RELEASE:compile
+[INFO] |     |  +- org.springframework.cloud:spring-cloud-netflix-eureka-client:jar:1.4.0.RELEASE:compile
+[INFO] |     |  \- com.netflix.eureka:eureka-core:jar:1.7.0:compile
+[INFO] |     +- org.springframework.cloud:spring-cloud-netflix-turbine:jar:1.4.0.RELEASE:compile
+[INFO] |     \- com.netflix.turbine:turbine-core:jar:1.0.0:compile
+[INFO] +- org.springframework.cloud:spring-cloud-netflix-hystrix-dashboard:jar:2.0.0.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-freemarker:jar:1.5.13.RELEASE:compile
+[INFO] |  |  \- org.freemarker:freemarker:jar:2.3.28:compile
+[INFO] |  +- org.webjars:jquery:jar:2.1.1:compile
+[INFO] |  \- org.webjars:d3js:jar:3.4.11:compile
+[INFO] +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
+[INFO] +- org.springframework:spring-webmvc:jar:4.3.17.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework:spring-web:jar:4.3.17.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-jetty:jar:1.5.13.RELEASE:compile
+[INFO] |  \- org.mortbay.jasper:apache-el:jar:8.0.33:compile
+[INFO] +- org.springframework.boot:spring-boot-autoconfigure:jar:1.5.13.RELEASE:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.4:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-core:jar:2.9.4:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.5:compile
+[INFO] +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.8.11:compile
+[INFO] +- org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:compile
+[INFO] +- org.apache.ws.commons.schema:XmlSchema:jar:1.4.7:compile
+[INFO] +- org.apache.cxf:cxf-rt-databinding-jaxb:jar:3.2.5:compile
+[INFO] |  +- org.apache.cxf:cxf-core:jar:3.2.5:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:5.0.3:compile
+[INFO] |  \- org.apache.cxf:cxf-rt-wsdl:jar:3.2.5:compile
+[INFO] +- org.codehaus.jackson:jackson-core-asl:jar:1.9.13:compile
+[INFO] +- org.codehaus.jackson:jackson-jaxrs:jar:1.9.13:compile
+[INFO] +- org.apache.ignite:ignite-core:jar:2.3.0:compile
+[INFO] |  +- javax.cache:cache-api:jar:1.0.0:compile
+[INFO] |  +- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  \- org.gridgain:ignite-shmem:jar:1.0.0:compile
+[INFO] +- org.apache.ignite:ignite-spring:jar:2.3.0:compile
+[INFO] +- org.apache.ignite:ignite-indexing:jar:2.3.0:compile
+[INFO] +- org.apache.ignite:ignite-slf4j:jar:2.6.0:compile
+[INFO] +- io.springfox:springfox-spi:jar:2.9.2:compile
+[INFO] |  \- io.springfox:springfox-core:jar:2.9.2:compile
+[INFO] +- org.mockito:mockito-core:jar:2.8.47:test
+[INFO] |  \- net.bytebuddy:byte-buddy-agent:jar:1.6.14:test
+[INFO] +- org.springframework.retry:spring-retry:jar:1.2.2.RELEASE:compile
+[INFO] +- org.apache.cxf:cxf-rt-bindings-soap:jar:3.2.5:compile
+[INFO] +- org.apache.cxf:cxf-rt-ws-policy:jar:3.2.5:compile
+[INFO] |  \- org.apache.neethi:neethi:jar:3.1.1:compile
+[INFO] +- org.apache.cxf:cxf-bundle:jar:2.6.2:compile
+[INFO] |  +- org.apache.velocity:velocity:jar:1.7:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-xjc:jar:2.2.5:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-impl:jar:2.2.5:compile
+[INFO] |  +- javax.xml.soap:saaj-api:jar:1.3.4:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-ws-metadata_2.0_spec:jar:1.1.3:compile
+[INFO] |  +- org.apache.ws.xmlschema:xmlschema-core:jar:2.0.3:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-jaxws_2.2_spec:jar:1.1:compile
+[INFO] |  +- org.apache.xmlbeans:xmlbeans:jar:2.5.0:compile
+[INFO] |  +- xml-resolver:xml-resolver:jar:1.2:compile
+[INFO] |  +- javax.xml.bind:jaxb-api:jar:2.2.6:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.7.1:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.1:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-annotation_1.0_spec:jar:1.1.1:compile
+[INFO] |  +- org.eclipse.jetty:jetty-continuation:jar:9.4.10.v20180503:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-servlet_2.5_spec:jar:1.1.2:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1:compile
+[INFO] |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- org.springframework:spring-asm:jar:3.0.7.RELEASE:compile
+[INFO] |  +- asm:asm:jar:3.3.1:compile
+[INFO] |  +- rhino:js:jar:1.7R2:compile
+[INFO] |  +- javax.ws.rs:jsr311-api:jar:1.1.1:compile
+[INFO] |  +- net.oauth.core:oauth-provider:jar:20100527:compile
+[INFO] |  +- net.oauth.core:oauth:jar:20100527:compile
+[INFO] |  +- net.sf.ehcache:ehcache-core:jar:2.5.1:compile
+[INFO] |  +- org.apache.ws.security:wss4j:jar:1.6.7:compile
+[INFO] |  +- org.apache.santuario:xmlsec:jar:1.5.2:compile
+[INFO] |  +- org.opensaml:opensaml:jar:2.5.1-1:compile
+[INFO] |  +- org.opensaml:openws:jar:1.4.2-1:compile
+[INFO] |  +- org.opensaml:xmltooling:jar:1.3.2-1:compile
+[INFO] |  +- xalan:xalan:jar:2.7.1:compile
+[INFO] |  \- xalan:serializer:jar:2.7.1:compile
+[INFO] +- com.atomikos:transactions:jar:4.0.6:compile
+[INFO] |  \- com.atomikos:atomikos-util:jar:4.0.6:compile
+[INFO] +- com.atomikos:transactions-api:jar:4.0.6:compile
+[INFO] +- com.atomikos:transactions-jdbc:jar:4.0.6:compile
+[INFO] +- com.atomikos:transactions-jta:jar:4.0.6:compile
+[INFO] \- com.atomikos:transactions-hibernate4:jar:4.0.6:compile

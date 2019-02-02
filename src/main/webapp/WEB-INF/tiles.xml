@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!--ADMIN PAGES-->
+    <definition name="templateAdmin" template="/WEB-INF/templates/admin/templateAdmin.jsp">
+        <put-attribute name="header" value="/WEB-INF/templates/admin/headerAdmin.jsp"/>
+        <put-attribute name="left" value="/WEB-INF/templates/admin/leftAdmin.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/admin/footerAdmin.jsp"/>
+    </definition>
+
+    <definition name="admin/*" extends="templateAdmin">
+        <put-attribute name="title" value="admin.title"/>
+        <put-attribute name="body" value="/WEB-INF/views/admin/{1}.jsp"/>
+    </definition>
+
+
+    <!--METRONIC PAGES (BOARD)-->
+    <definition name="templateMetronic" template="/WEB-INF/templates/board/templateMetronic.jsp">
+        <put-attribute name="header" value="/WEB-INF/templates/board/headerMetronic.jsp"/>
+        <put-attribute name="left" value="/WEB-INF/templates/board/leftMetronic.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/board/footerMetronic.jsp"/>
+    </definition>
+
+    <definition name="" extends="templateMetronic">
+        <put-attribute name="title" value="board.title"/>
+        <put-attribute name="body" value="/WEB-INF/views/board/dashboard.jsp"/>
+    </definition>
+
+    <definition name="board/*" extends="templateMetronic">
+        <put-attribute name="title" value="{1}.title"/>
+        <put-attribute name="body" value="/WEB-INF/views/board/{1}.jsp"/>
+    </definition>
+
+</tiles-definitions>
+
+

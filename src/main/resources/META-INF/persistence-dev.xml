@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+    <persistence-unit name="EXPERTS-UNIT-LATEST" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <properties>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.cache.use_second_level_cache" value="true"/>
+            <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory"/>
+            <property name="hibernate.cache.infinispan.cfg" value="infinispan.xml"/>
+            <property name="hibernate.cache.use_query_cache" value="true"/>
+            <property name="hibernate.cache.use_minimal_puts" value="true"/>
+            <property name="hibernate.cache.hazelcast.use_native_client" value="true"/>
+            <property name="hibernate.cache.hazelcast.native_client_hosts" value="172.28.155.241:5701"/>
+            <property name="hibernate.cache.hazelcast.native_client_group" value="dev"/>
+            <property name="hibernate.cache.hazelcast.native_client_password" value="dev-pass"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@192.168.10.9:1251/dv10g"/>
+            <property name="hibernate.generate_statistics" value="true"/>
+            <property name="hibernate.cache.use_structured_entries" value="true"/>
+            <property name="javax.persistence.sharedCache.mode" value="ENABLE_SELECTIVE"/>
+        </properties>
+    </persistence-unit>
+</persistence>

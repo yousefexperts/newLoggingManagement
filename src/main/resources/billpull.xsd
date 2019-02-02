@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://192.168.10.230:3070/ws/billpull"
+        elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://192.168.10.230:3070/ws/billpull">
+
+    <element name="BillPullResponse">
+        <complexType>
+            <sequence>
+
+                <element name="BillPullResult" type="string" maxOccurs="1" minOccurs="1" />
+               
+
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="BillPullRequest">
+        <complexType>
+            <sequence>
+
+                <element name="BillPullResult" type="string" maxOccurs="1" minOccurs="1" />
+               
+
+            </sequence>
+        </complexType>
+    </element>
+</schema>
